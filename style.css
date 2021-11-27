@@ -1,0 +1,83 @@
+/*
+Theme Name:     Kallyas Child Theme
+Theme URI:      http://kallyas.net/
+Description:    Child theme for the Kallyas theme
+Author:         Hogash
+Author URI:     http://themeforest.net/user/hogash
+Template:       kallyas
+Version:        1.0
+Tags: dark, light, left-sidebar, right-sidebar, fluid-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, full-width-template, theme-options, translation-ready
+Text Domain:  zn_framework
+*/
+.product-list-item span.kw-prodimage >img {
+    max-height: 100%;
+    width: auto !important;
+}
+/*2019-05-10*/
+.custom-contactform7 .kl-fancy-form .wpcf7-form-control:not(.wpcf7-checkbox):not(.wpcf7-radio){padding: 26px 16px 6px 10px;}
+.custom-contactform7 .wpcf7-form-control:not(.wpcf7-checkbox):not(.wpcf7-radio){border:0;}
+.custom-contactform7 .wpcf7-submit-container .wpcf7-submit{padding: 10px 20px;width:auto;}
+.custom-contactform7 .cf-elm-form .kl-fancy-form-label {left: 25px;}
+.custom-contactform7 .form-space{height:15px;}
+.wc-single-product-ext-btns {margin: 30px 0;}
+.kl-blog-item-author {display: none;}
+/*.woocommerce #content .summary .price{display:none;}*/
+/*cookie-notice*/
+#cookie-notice .cn-button{min-width:100px;}
+#th-content-page>.kl-blog-page-content{background: #fff;padding: 60px;}
+/*hide reCaptcha*/
+/*.grecaptcha-badge {opacity: 0;}*/
+@media (max-width: 767px){
+/*page content white*/
+#th-content-page>.kl-blog-page-content {padding-left: 20px;padding-right: 20px;}
+/*mobile view, modal close btn color*/
+.mfp-close-btn-in .zn_section--inlinemodal .mfp-close {color: #0e0e0e;}
+.woocommerce .kallyas-productlist-wrapper:not(.kallyas-wc-cols--2):not(.kallyas-wc-cols--1) ul.products li.product {width: 100%;}
+}
+/*2020-01-02*/
+/*rate star color*/
+.star-rating{color:#cd2122 !important;}
+.stars a {color: #cd2122;}
+.woocommerce.widget ul.product_list_widget li .star-rating{font-size:1em;}
+@media (max-width: 991px){
+.woocommerce #content div.product.prodpage-style3 .single_product_main_image, .woocommerce div.product.prodpage-style3 .single_product_main_image {max-width:100%;}
+}
+.woocommerce div.product #reviews .comment-respond .comment-reply-title {
+    font-family: inherit;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+}
+.woocommerce div.product #reviews .comment-respond .comment-reply-title:before {
+    content: '+';
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    border: 1px solid #ddd;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    color: #000;
+    -webkit-transition: border-color .1s ease-out;
+    transition: border-color .1s ease-out;
+}
+.woocommerce ul.products li.product .product-list-item .star-rating {
+    width: 64px;
+    font-size: 12px;
+}
+.woocommerce-ordering{
+    z-index:0;
+}
+.pswp.pswp--open {
+    z-index: 99999;
+}
+/*2020-01-13*/
+table.shop_attributes.in-description-short th {
+    width: auto;
+}
+a:hover table.woocommerce-product-attributes {
+    color: #000;
+}
